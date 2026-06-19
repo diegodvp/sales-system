@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SalesAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SalesAPI.Controllers.ClienteController.GetAll">
+            <summary>
+            Lista todos os clientes cadastrados
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ClienteController.GetById(System.Int32)">
+            <summary>
+            Busca um cliente pelo ID
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ClienteController.GetByCNPJ(System.String)">
+            <summary>
+            Busca um cliente pelo CNPJ
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ClienteController.Create(SalesAPI.DTOs.CriarClienteDTO)">
+            <summary>
+            Cadastra um novo cliente
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ClienteController.Update(System.Int32,SalesAPI.DTOs.AtualizarClienteDTO)">
+            <summary>
+            Atualiza os dados de um cliente
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ClienteController.Delete(System.Int32)">
+            <summary>
+            Remove um cliente
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.GetAll(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.String)">
+            <summary>
+            Lista todos os pedidos com opção de filtros
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.GetById(System.Int32)">
+            <summary>
+            Busca um pedido pelo ID com seus itens
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.Create(SalesAPI.DTOs.CriarPedidoDTO)">
+            <summary>
+            Cria um novo pedido para um cliente
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.AdicionarItem(System.Int32,SalesAPI.DTOs.AdicionarItemDTO)">
+            <summary>
+            Adiciona um produto ao pedido
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.AtualizarItem(System.Int32,System.Int32,SalesAPI.DTOs.AtualizarItemDTO)">
+            <summary>
+            Atualiza a quantidade de um item no pedido
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.PedidoController.RemoverItem(System.Int32,System.Int32)">
+            <summary>
+            Remove um item do pedido
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ProdutoController.GetAll">
+            <summary>
+            Lista todos os produtos disponíveis
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ProdutoController.GetById(System.Int32)">
+            <summary>
+            Busca um produto pelo ID
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ProdutoController.Create(SalesAPI.DTOs.CriarProdutoDTO)">
+            <summary>
+            Cadastra um novo produto
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ProdutoController.Update(System.Int32,SalesAPI.DTOs.AtualizarProdutoDTO)">
+            <summary>
+            Atualiza os dados de um produto
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Controllers.ProdutoController.Delete(System.Int32)">
+            <summary>
+            Remove um produto
+            </summary>
+        </member>
+        <member name="T:SalesAPI.Middleware.ErrorHandlingMiddleware">
+            <summary>
+            Middleware global para tratamento de exceções não tratadas
+            </summary>
+        </member>
+        <member name="T:SalesAPI.Specifications.CnpjSpecification">
+            <summary>
+            Especificação para validação de CNPJ
+            </summary>
+        </member>
+        <member name="M:SalesAPI.Specifications.CnpjSpecification.Limpar(System.String)">
+            <summary>
+            Remove caracteres não numéricos do CNPJ
+            </summary>
+        </member>
+        <member name="T:SalesAPI.Specifications.EmailSpecification">
+            <summary>
+            Especificação para validação do formato de e-mail
+            </summary>
+        </member>
+        <member name="T:SalesAPI.Specifications.ISpecification`1">
+            <summary>
+            Padrão Specification para validações de regras de negócio
+            </summary>
+        </member>
+        <member name="T:SalesAPI.Validations.ProdutoValidation">
+            <summary>
+            Validador para operações de Produto
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>
